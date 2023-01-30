@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins' , sans-serif;
+}
+/* global tags */
+h1 {
+    font-size: 2.5rem;
+    font-weight:700;
+    color: rgb(35, 35,85);
+}
+span{
+    font-size: .9rem;
+    color: #757573;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+/*navigation*/
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); 
+    z-index: 999;
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+nav .navigation{
+    display: flex;
+}
+#menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+#cross{
+   
+    display: none; 
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li a{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(21,21,100);
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+nav .navigation ul li a:hover{
+    color: #d8a311;
+}
+
+/*home*/
+
+#home {
+    background-image: url("https://img.freepik.com/premium-photo/top-view-notebooks-blue-background_23-2148565129.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+
+}
+#home h2 {
+    color: black;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+} 
+#home p {
+    width: 50%;
+    color: black; 
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px; 
+}
+
+
+#home a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-size: 600;
+    border-radius: 5px;
+}
+#home a.blue{
+    color: white;
+    background-color: rgb(21,21,100);
+}
+#home a.blue:hover{
+    color: rgb(21,21,100);
+    background-color: white;
+}
+#home a.yellow{
+    color: white;
+    background-color:#fdc93b;
+}
+#home a.yellow:hover{
+    color: #fdc93b;
+    background-color: white;
+}
+
+/*FEATURES*/
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background-color: #f9f9ff;
+    text-align: center;
+}
+#features .fea-box h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(46 , 46 ,59);
+    padding: 13px 0 7px 0;
+
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70 ,87);
+    
+}
+
+
+/* course*/
+
+#course{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+#course .course-box{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#course .courses{
+    text-align: start;
+    color: #f9f9ff;
+    height: 100%;
+    position: relative;      
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size:cover ;
+    background-position: center;
+}
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses .details p{
+    color: #fdc93b;
+    font-size: 1.3rem;
+}
+#course .courses .cost{
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+/*registration*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-image:linear-gradient(rgb(99,112,168,0.5) , rgb(81,91,233,0.5)), url(registration.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder{
+    color: #fff;
+}
+
+#registration .reminder h1{
+    color: #fff;
+    margin-top: 40px;
+}
+
+#registration .form{
+    background: #fff;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    box-shadow: 0 8px 32px 0 rgb(31,38,153,0.37);
+    width: 200;
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84,40,241);
+    outline: none;
+}
+#registration .form a.yellow{
+    color: white;
+    background-color:#fdc93b;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 35px;
+    background-color: #fdc93b;
+    font-size: 600;
+    border-radius: 5px;
+}
+#registration .form a.yellow:hover{
+    color: #fdc93b;
+    background-color: white;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    background-color:#101C23; 
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-bottom: 150px;
+    padding-right: 30px;
+}
+footer h3 {
+    color: #f9f9ff;
+    padding-bottom: 50px;
+}
+footer li{
+    list-style: none;
+    color: #757573;
+    font-size: large;
+    padding-top:20px;
+    cursor: pointer;
+}
+footer li:hover{
+    color: white;
+}
+footer p{
+    color: #757573;
+    padding-bottom: 30px;
+    font-size: medium;
+}
+footer .yellow{
+    color: white;
+    background-color:#fdc93b;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-radius: 9px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer .yellow:hover{
+    color: #fdc93b;
+    background-color: white;
+}
+footer input{
+    
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 9px;
+    padding-top: 20px;
+    border: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+
+    nav {
+        padding: 15px 20px ;
+    }
+
+    nav img {
+        width: 130px;
+    } 
+
+    #menu{
+        display: initial;
+    }
+    #cross{
+       display: initial;
+       cursor: pointer;
+       font-size: 1.6rem;
+      padding: 20px 0 20px 20px;
+       width: 80px;
+    
+    }
+    
+    nav .navigation ul li{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background-color: rgba(17 ,20 ,104 , 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255,255,255,0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+    nav .navigation ul li.active{
+        right: 0;
+    }
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px ;
+        margin-left: 0;    
+    }
+    nav .navigation ul li a{
+          padding-bottom: 40px;
+          padding-top: 30px;
+          color: #fff;
+          font-size: large;
+    }
+
+    #home p {
+        width: 90%;
+    }
+    #home{
+        padding-top: 0px;
+    }
+    #home h2 {
+        color: black;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+    }
+    #features {
+         padding-left: 10px; 
+        padding-right: 10px;
+    }
+    #course {
+        padding: 8vw 4vw 0vw 4vw;
+      
+    }
+    #registration .reminder {
+        color: #fff;
+        padding-right: 40px;
+    }
+    #registration .reminder h1 {
+        color: #fff;
+        margin-top: 40px;
+        font-size: large;
+    }
+
+    #registration .reminder h1 {
+        color: #fff;
+        margin-top: 40px;
+    }
+    
+    footer h3{
+        align-items: center;
+        display: flex;
+        word-spacing: 80px;
+    }
+    footer li{
+        display: flex;
+        align-items: center;
+        word-spacing: 80px;
+    }
+ 
+    footer input{
+        margin-bottom: 30px;
+    }
+
+ 
+}
